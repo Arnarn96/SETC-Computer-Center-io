@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>S.E Computer Center</title>
+    <title>S.E-Computer-Center</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -56,16 +56,38 @@
             height: 200px;
             object-fit: cover;
         }
+		/* Adjust logo and brand text for mobile */
+		.logo {
+			height: 60px; /* Adjust logo size for mobile */
+			margin-right: 10px; /* Adjust spacing */
+		}
+
+			.navbar-brand strong {
+			font-size: 1.5rem; /* Adjust text size */
+		}	
+
+			/* Media query for smaller screens */
+			@media (max-width: 768px) {
+			.logo {
+        height: 50px; /* Further reduce logo size on smaller screens */
+    }
+
+    .navbar-brand strong {
+        font-size: 1.2rem; /* Reduce font size of text */
+    }
+}
+
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="S.E Computer Center Logo" class="logo">
-                <strong style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">S.E Computer Center</strong>
-            </a>
+           <a class="navbar-brand" href="#">
+    <img src="images/logo.png" alt="S.E Computer Center Logo" class="logo">
+    <strong style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); font-size: 1.5rem;">S.E Computer Center</strong>
+</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
