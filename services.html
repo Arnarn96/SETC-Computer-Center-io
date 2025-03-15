@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services - S.E Computer Center</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(145deg, #e3f2fd, #ffffff);
+            color: #212529;
+            font-family: Arial, sans-serif;
+        }
+        .sticky-top { top: 0; z-index: 1020; }
+        .logo {
+            height: 80px;
+            margin-right: 15px;
+        }
+        .navbar-light {
+            background: linear-gradient(145deg, #ffffff, #d1e9ff);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #007bff !important;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            color: #000000 !important;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .bg-primary {
+            background-color: #007bff !important;
+        }
+        .btn-primary {
+            background-color: #007bff !important;
+            border-color: #0056b3;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+        }
+        .footer {
+            background-color: #212529;
+            color: #ffffff;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="S.E Computer Center Logo" class="logo">
+                <strong style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">S.E Computer Center</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Detail Section -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <p class="text-center mb-4">At S.E Computer Center, we provide expert services to meet all your computer and technology needs. Below are the details of the services we offer.</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/troubleshooting.jpg" class="card-img-top" alt="Computer Troubleshooting">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Troubleshooting</h5>
+                        <p class="card-text">We specialize in diagnosing and repairing both hardware and software issues. Whether it’s a slow computer or a broken system, we’ll get your machine back in top shape in no time.</p>
+                        <ul>
+                            <li>System diagnosis</li>
+                            <li>Hardware repair and replacement</li>
+                            <li>Software troubleshooting</li>
+                            <li>System optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/reprogram.jpg" class="card-img-top" alt="Reprogram & Installation">
+                    <div class="card-body">
+                        <h5 class="card-title">Reprogramming & Installation</h5>
+                        <p class="card-text">We offer reprogramming services for a variety of devices and provide installation services for software, drivers, and other system applications. We also assist in reinstalling operating systems.</p>
+                        <ul>
+                            <li>Reprogramming for various systems</li>
+                            <li>Operating system installation</li>
+                            <li>Software and application installation</li>
+                            <li>Driver updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/motherboard_repair.jpg" class="card-img-top" alt="Motherboard Level Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Motherboard Level Repair</h5>
+                        <p class="card-text">Our experts are skilled in diagnosing and repairing motherboards for both laptops and desktops. From power issues to component replacements, we handle it all.</p>
+                        <ul>
+                            <li>Motherboard diagnostics</li>
+                            <li>Component repairs and replacements</li>
+                            <li>Power supply issues</li>
+                            <li>Advanced troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <p class="text-center mb-4">Have any questions or want to schedule a service? Feel free to <a href="contact.html">contact us</a>.</p>
+    </section>
+
+    <!-- Add the Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
