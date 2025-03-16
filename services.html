@@ -10,6 +10,7 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+	
         body {
             background: linear-gradient(145deg, #e3f2fd, #ffffff);
             color: #212529;
@@ -17,8 +18,8 @@
         }
         .sticky-top { top: 0; z-index: 1020; }
         .logo {
-            height: 80px;
-            margin-right: 15px;
+            height: 70px;
+            width: auto; /* Adjust logo's width to maintain aspect ratio */
         }
         .navbar-light {
             background: linear-gradient(145deg, #ffffff, #d1e9ff);
@@ -56,26 +57,41 @@
             height: 200px;
             object-fit: cover;
         }
+
+        /* Media Query for Responsive Logo and Text */
+        @media (max-width: 768px) {
+            .logo {
+                height: 50px; /* Make the logo smaller on smaller screens */
+            }
+
+            .navbar-brand strong {
+                font-size: 1.2rem; /* Make the text smaller for mobile */
+            }
+		
+
+
+
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="images/logo.png" alt="S.E Computer Center Logo" class="logo">
-                <strong style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">S.E Computer Center</strong>
+                <strong class="ms-2 text-nowrap" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">S.E.T.C Computer Center</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
             </div>
         </div>
@@ -135,6 +151,39 @@
         </div>
     </section>
 
+    <!-- Products Section -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/custom_pc.jpg" class="card-img-top" alt="Custom PC Builds">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom PC Builds</h5>
+                        <p class="card-text">We build custom PCs tailored to your needs, whether for gaming, work, or home use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/peso_wifi.jpg" class="card-img-top" alt="Peso WiFi">
+                    <div class="card-body">
+                        <h5 class="card-title">Peso WiFi</h5>
+                        <p class="card-text">Affordable internet solutions with our Peso WiFi products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/cctv.jpg" class="card-img-top" alt="CCTV Systems">
+                    <div class="card-body">
+                        <h5 class="card-title">CCTV Systems</h5>
+                        <p class="card-text">Secure your home or business with our high-quality CCTV surveillance systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section class="container py-5">
         <h2 class="text-center mb-4">Get in Touch</h2>

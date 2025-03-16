@@ -18,6 +18,7 @@
         .sticky-top { top: 0; z-index: 1020; }
         .logo {
             height: 80px;
+            width: auto; /* Adjust logo width to maintain aspect ratio */
             margin-right: 15px;
         }
         .navbar-light {
@@ -58,26 +59,52 @@
             height: 250px;
             border-radius: 10px;
         }
+		/* Adjust logo and brand text for mobile */
+		.logo {
+			height: 60px; /* Adjust logo size for mobile */
+			margin-right: 10px; /* Adjust spacing */
+		}
+
+			.navbar-brand strong {
+			font-size: 1.5rem; /* Adjust text size */
+		}	
+
+			/* Media query for smaller screens */
+			@media (max-width: 768px) {
+			.logo {
+        height: 50px; /* Further reduce logo size on smaller screens */
+    }
+
+        /* Media Query for Responsive Logo and Text */
+        @media (max-width: 768px) {
+            .logo {
+                height: 60px; /* Make the logo smaller on smaller screens */
+            }
+
+            .navbar-brand strong {
+                font-size: 1.5rem; /* Adjust brand text size for mobile */
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="S.E Computer Center Logo" class="logo">
-                <strong style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">S.E Computer Center</strong>
-            </a>
+           <a class="navbar-brand" href="index.html">
+			<img src="images/logo.png" alt="S.E Computer Center Logo" class="logo">
+			<strong style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); font-size: 1.5rem;">S.E.T.C Computer Center</strong>
+			</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
             </div>
         </div>
@@ -93,15 +120,15 @@
         <div class="row g-4 mb-5">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/troubleshooting_project.jpg" class="gallery-image card-img-top" alt="Troubleshooting Project">
+                    <img src="images/repair1.jpg" class="gallery-image card-img-top" alt="Troubleshooting Project">
                     <div class="card-body">
-                        <p class="card-text">Diagnosing and repairing a desktop computer for performance issues.</p>
+                        <p class="card-text">Diagnosing and repairing a desktop and laptop computer for performance issues.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/motherboard_repair_project.jpg" class="gallery-image card-img-top" alt="Motherboard Repair">
+                    <img src="images/repair2.jpg" class="gallery-image card-img-top" alt="Motherboard Repair">
                     <div class="card-body">
                         <p class="card-text">Repairing a damaged motherboard to restore a laptop's functionality.</p>
                     </div>
@@ -109,8 +136,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <video class="gallery-video" controls>
-                        <source src="videos/motherboard_repair.mp4" type="video/mp4">
+                    <video class="gallery-video" autoplay muted loop>
+                        <source src="videos/motherboard repair.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="card-body">
@@ -125,7 +152,7 @@
         <div class="row g-4 mb-5">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/custom_pc_build.jpg" class="gallery-image card-img-top" alt="Custom PC Build">
+                    <img src="images/build1.jpg" class="gallery-image card-img-top" alt="Custom PC Build">
                     <div class="card-body">
                         <p class="card-text">A custom gaming PC build tailored to the user's specific needs.</p>
                     </div>
@@ -133,8 +160,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <video class="gallery-video" controls>
-                        <source src="videos/pc_build_process.mp4" type="video/mp4">
+                    <video class="gallery-video" autoplay loop muted>
+                        <source src="videos/pcbuild.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="card-body">
@@ -144,7 +171,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/pc_build_project.jpg" class="gallery-image card-img-top" alt="PC Build Project">
+                    <img src="images/build2.jpg" class="gallery-image card-img-top" alt="PC Build Project">
                     <div class="card-body">
                         <p class="card-text">A finished custom build ready for delivery to the customer.</p>
                     </div>
@@ -157,28 +184,28 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/purchase_project.jpg" class="gallery-image card-img-top" alt="Purchase Project">
+                    <img src="images/purchase1.jpg" class="gallery-image card-img-top" alt="Purchase Project">
                     <div class="card-body">
-                        <p class="card-text">Recent purchase of high-quality PC components for customer orders.</p>
+                        <p class="card-text">Recent purchase of high-quality piso wifi for customer orders.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/repair_workshop.jpg" class="gallery-image card-img-top" alt="Workshop">
+                    <img src="images/purchase2.jpg" class="gallery-image card-img-top" alt="Workshop">
                     <div class="card-body">
-                        <p class="card-text">Our workshop setup for inspecting purchased parts and performing repairs.</p>
+                        <p class="card-text">We are planning to purchase a Piso WiFi system to provide convenient internet access. This will help improve connectivity and offer a practical solution for users.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <video class="gallery-video" controls>
-                        <source src="videos/purchase_unboxing.mp4" type="video/mp4">
+                    <video class="gallery-video" autoplay muted loop>
+                        <source src="videos/purchase.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="card-body">
-                        <p class="card-text">Unboxing of new PC components recently purchased for a client build.</p>
+                        <p class="card-text">Unboxing of new wifi components recently purchased for a client piso-wifi build.</p>
                     </div>
                 </div>
             </div>
